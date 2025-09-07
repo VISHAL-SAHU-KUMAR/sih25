@@ -1,0 +1,204 @@
+/* Header styling */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(135deg, #1a5f4a 0%, #2d8659 100%);
+  padding: 12px 0;
+  box-shadow: 0 2px 15px rgba(26, 95, 74, 0.3);
+  z-index: 1000;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+}
+
+.brand-text {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-1px);
+}
+
+/* Full page background */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 80px;
+  background: linear-gradient(135deg, #e8f5f0 0%, #b8e6d2 50%, #7dd3ab 100%);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card styling */
+.login-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 45px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(26, 95, 74, 0.15);
+  text-align: center;
+  width: 420px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Welcome section */
+.welcome-section {
+  margin-bottom: 35px;
+}
+
+.welcome-icon {
+  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+  color: white;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  box-shadow: 0 8px 25px rgba(249, 115, 22, 0.3);
+}
+
+/* Title & Subtitle */
+.login-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a5f4a;
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+.login-subtitle {
+  font-size: 16px;
+  color: #64748b;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+/* Role buttons */
+.role-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.role-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: linear-gradient(135deg, #1a5f4a 0%, #2d8659 100%);
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(26, 95, 74, 0.2);
+}
+
+.role-btn:hover {
+  background: linear-gradient(135deg, #0f4a3a 0%, #1e6b47 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(26, 95, 74, 0.3);
+}
+
+.role-btn:active {
+  transform: translateY(0);
+}
+
+.role-icon {
+  color: #ffffff;
+}
+
+/* Register link */
+.register-text {
+  font-size: 14px;
+  color: #64748b;
+  padding-top: 20px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.register-link {
+  color: #f97316;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.register-link:hover {
+  color: #ea580c;
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .header-content {
+    padding: 0 15px;
+  }
+  
+  .nav-links {
+    gap: 15px;
+  }
+  
+  .nav-link {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+  
+  .login-card {
+    width: 90%;
+    padding: 30px 25px;
+    margin: 20px;
+  }
+  
+  .login-title {
+    font-size: 24px;
+  }
+}

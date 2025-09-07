@@ -1,0 +1,250 @@
+.system-status-indicator {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.status-dot {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 18px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.status-dot:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.system-status-panel {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 350px;
+  max-height: 80vh;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border: 1px solid #e0e0e0;
+  z-index: 1000;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.status-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  background: #f8f9fa;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.status-header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.status-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.refresh-btn,
+.close-btn {
+  background: none;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.refresh-btn:hover,
+.close-btn:hover {
+  background-color: #e9ecef;
+}
+
+.overall-status {
+  padding: 16px 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.overall-indicator {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 500;
+}
+
+.status-icon {
+  font-size: 20px;
+}
+
+.status-text {
+  font-size: 14px;
+}
+
+.services-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.service-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.2s;
+}
+
+.service-item:hover {
+  background-color: #f8f9fa;
+}
+
+.service-item:last-child {
+  border-bottom: none;
+}
+
+.service-info {
+  flex: 1;
+}
+
+.service-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.service-icon {
+  font-size: 16px;
+}
+
+.service-title {
+  font-weight: 500;
+  color: #333;
+  font-size: 14px;
+}
+
+.service-description {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.3;
+}
+
+.service-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.service-link {
+  text-decoration: none;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.service-link:hover {
+  background-color: #e9ecef;
+}
+
+.last-checked {
+  padding: 12px 20px;
+  font-size: 11px;
+  color: #666;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #f8f9fa;
+}
+
+.quick-actions {
+  padding: 16px 20px;
+  display: flex;
+  gap: 8px;
+  background-color: #f8f9fa;
+}
+
+.action-btn {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.action-btn:hover {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .system-status-panel {
+    width: calc(100vw - 40px);
+    max-width: 350px;
+  }
+  
+  .system-status-indicator {
+    top: 10px;
+    right: 10px;
+  }
+}
+
+/* Animation for status checking */
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.6; }
+  100% { opacity: 1; }
+}
+
+.status-dot[style*="#2196F3"] {
+  animation: pulse 1.5s infinite;
+}
+
+/* Scrollbar styling */
+.services-list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.services-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.services-list::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 2px;
+}
+
+.services-list::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}

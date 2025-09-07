@@ -1,0 +1,31 @@
+{
+  "best_model": "Random Forest",
+  "model_performance": {
+    "Random Forest": {
+      "accuracy": 1.0,
+      "cv_mean": 0.9997967479674796,
+      "cv_std": 0.000406504065040636
+    },
+    "K-Nearest Neighbors": {
+      "accuracy": 1.0,
+      "cv_mean": 1.0,
+      "cv_std": 0.0
+    },
+    "Support Vector Machine": {
+      "accuracy": 1.0,
+      "cv_mean": 1.0,
+      "cv_std": 0.0
+    },
+    "Naive Bayes": {
+      "accuracy": 1.0,
+      "cv_mean": 1.0,
+      "cv_std": 0.0
+    }
+  },
+  "dataset_info": {
+    "total_diseases": 41,
+    "total_symptoms": 132,
+    "training_samples": 4920,
+    "testing_samples": 41
+  }
+}

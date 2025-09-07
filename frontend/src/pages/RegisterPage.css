@@ -1,0 +1,275 @@
+/* Header styling - shared with login but with different gradient */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(135deg, #0f766e 0%,  #1a5f4a; 100%);
+  padding: 12px 0;
+  box-shadow: 0 2px 15px rgba(15, 118, 110, 0.3);
+  z-index: 1000;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+}
+
+.brand-text {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: #54cdddff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-1px);
+}
+
+/* Full page background */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 80px;
+  background: linear-gradient(135deg, #ecfdf5 0%, #a7f3d0 50%, #34d399 100%);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card styling */
+.register-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 45px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(15, 118, 110, 0.15);
+  text-align: center;
+  width: 450px;
+  min-height: 105vh;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Welcome section */
+.welcome-section {
+  margin-bottom: 35px;
+}
+
+.welcome-icon {
+  background: linear-gradient(135deg, #0f766e 0%, #14b8a6 100%);
+  color: white;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  box-shadow: 0 8px 25px rgba(15, 118, 110, 0.3);
+}
+
+/* Title & Subtitle */
+.register-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0f766e;
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+.register-subtitle {
+  font-size: 16px;
+  color: #64748b;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+/* Role options */
+.role-options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.role-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: linear-gradient(135deg, #0f766e 0%, #14b8a6 100%);
+  color: white;
+  border: none;
+  padding: 16px 20px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(15, 118, 110, 0.2);
+}
+
+.role-btn:hover {
+  background: linear-gradient(135deg, #0d5b56 0%, #0f9488 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(15, 118, 110, 0.3);
+}
+
+.role-btn:active {
+  transform: translateY(0);
+}
+
+/* Enhanced role specific styling */
+.role-btn.patient {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.2);
+}
+
+.role-btn.patient:hover {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
+}
+
+.role-btn.doctor {
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+  box-shadow: 0 4px 15px rgba(5, 150, 105, 0.2);
+}
+
+.role-btn.doctor:hover {
+  background: linear-gradient(135deg, #047857 0%, #059669 100%);
+  box-shadow: 0 8px 25px rgba(5, 150, 105, 0.3);
+}
+
+.role-btn.authority {
+  background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+  box-shadow: 0 4px 15px rgba(220, 38, 38, 0.2);
+}
+
+.role-btn.authority:hover {
+  background: linear-gradient(135deg, #b91c1c 0%, #dc2626 100%);
+  box-shadow: 0 8px 25px rgba(220, 38, 38, 0.3);
+}
+
+.role-btn.owner {
+  background: linear-gradient(135deg, #d97706 0%, #f59e0b 100%);
+  box-shadow: 0 4px 15px rgba(217, 119, 6, 0.2);
+}
+
+.role-btn.owner:hover {
+  background: linear-gradient(135deg, #b45309 0%, #d97706 100%);
+  box-shadow: 0 8px 25px rgba(217, 119, 6, 0.3);
+}
+
+/* Role icons */
+.role-icon {
+  color: #ffffff;
+}
+
+/* Login link */
+.login-text {
+  font-size: 14px;
+  color: #64748b;
+  padding-top: 20px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.login-link {
+  color: #f97316;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.login-link:hover {
+  color: #ea580c;
+  text-decoration: underline;
+}
+
+/* Feature highlights */
+.features {
+  margin: 25px 0;
+  padding: 20px;
+  background: rgba(15, 118, 110, 0.05);
+  border-radius: 12px;
+  border-left: 4px solid #14b8a6;
+}
+
+.features h4 {
+  color: #0f766e;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.features p {
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .header-content {
+    padding: 0 15px;
+  }
+  
+  .nav-links {
+    gap: 15px;
+  }
+  
+  .nav-link {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+  
+  .register-card {
+    width: 90%;
+    padding: 30px 25px;
+    margin: 20px;
+  }
+  
+  .register-title {
+    font-size: 24px;
+  }
+  
+  .features {
+    margin: 20px 0;
+    padding: 15px;
+  }
+}

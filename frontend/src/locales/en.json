@@ -1,0 +1,98 @@
+{
+  "nav": {
+    "home": "Home",
+    "login": "Login",
+    "register": "Register",
+    "symptomTracker": "Symptom Tracker",
+    "chatbot": "Chatbot",
+    "content": "Content",
+    "dashboard": "Dashboard",
+    "patients": "Patients",
+    "appointments": "Appointments",
+    "hospitalFinder": "Hospital Finder"
+  },
+  "landing": {
+    "title": "TeleHealth Rural",
+    "subtitle": "AI-driven telemedicine and medicine tracking platform for rural areas. Access healthcare anytime, anywhere.",
+    "startNow": "Start Now",
+    "newUser": "New User",
+    "aboutTitle": "About TeleHealth Rural",
+    "aboutIntro": "AI-powered teleconsultation & healthcare services for rural areas",
+    "mission": {
+      "title": "Our Mission",
+      "description": "To provide accessible healthcare solutions to rural communities, leveraging technology for teleconsultation, symptom tracking, and medical guidance."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "To ensure that every person, regardless of location, can access quality healthcare information and services conveniently and safely."
+    },
+    "values": {
+      "title": "Our Values",
+      "patientCare": "Patient-Centric Care",
+      "integrity": "Integrity & Transparency",
+      "innovation": "Innovation & Technology",
+      "accessibility": "Accessibility & Inclusion"
+    },
+    "features": {
+      "title": "Key Features",
+      "teleconsultation": {
+        "title": "Teleconsultation",
+        "description": "Video & voice consultations optimized for low-bandwidth connections."
+      },
+      "aiSymptom": {
+        "title": "AI Symptom Checker",
+        "description": "AI-powered triage for faster and accurate diagnosis."
+      },
+      "medicineTracking": {
+        "title": "Medicine Tracking",
+        "description": "Check availability in local pharmacies to avoid delays in treatment."
+      }
+    }
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "username": "Username",
+    "password": "Password",
+    "email": "Email",
+    "confirmPassword": "Confirm Password",
+    "patientLogin": "Patient Login",
+    "doctorLogin": "Doctor Login",
+    "authorityLogin": "Authority Login",
+    "patientRegister": "Patient Register",
+    "doctorRegister": "Doctor Register",
+    "authorityRegister": "Authority Register"
+  },
+  "dashboard": {
+    "patient": "Patient Dashboard",
+    "doctor": "Doctor Dashboard",
+    "authority": "Authority Dashboard",
+    "pharmacy": "Pharmacy View"
+  },
+  "common": {
+    "welcome": "Welcome",
+    "loading": "Loading...",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "search": "Search",
+    "close": "Close"
+  },
+  "symptoms": {
+    "tracker": "Symptom Tracker",
+    "addSymptom": "Add Symptom",
+    "selectSymptom": "Select Symptom",
+    "severity": "Severity",
+    "date": "Date",
+    "notes": "Notes"
+  },
+  "chat": {
+    "chatbot": "AI Health Assistant",
+    "askQuestion": "Ask a health question...",
+    "send": "Send",
+    "typing": "AI is typing..."
+  }
+}

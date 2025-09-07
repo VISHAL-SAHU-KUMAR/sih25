@@ -1,0 +1,84 @@
+{
+  "users": [
+    {
+      "id": "ddb5f78c-5d15-4496-9212-093a15e7b523",
+      "name": "Test Patient",
+      "email": "test@patient.com",
+      "password": "$2a$12$KM3kBDoMEIHqkCTms6b11eU12B0FpZopuBFvRibuFM.NQNO.Ahm3i",
+      "role": "patient",
+      "createdAt": "2025-09-07T15:42:38.231Z",
+      "lastLogin": "2025-09-07T15:44:48.213Z",
+      "isActive": true,
+      "isVerified": false,
+      "dateOfBirth": "1990-01-01",
+      "gender": "male",
+      "maritalStatus": "single",
+      "address": "123 Test Street"
+    },
+    {
+      "id": "262f5685-6e3c-4c7a-b391-f965cce08dfe",
+      "name": "vishal sahu",
+      "email": "vishalskumar199@gmail.com",
+      "password": "$2a$12$2G4j9uODxkY.KC7EuDNfFeMp47oYzoXwL.0chgn4tp0HY5ZpFBQoy",
+      "role": "patient",
+      "createdAt": "2025-09-07T15:45:07.314Z",
+      "lastLogin": "2025-09-07T15:48:57.853Z",
+      "isActive": true,
+      "isVerified": false,
+      "dateOfBirth": "2025-09-04",
+      "gender": "male",
+      "maritalStatus": "single",
+      "address": "alipur delhi-110036"
+    },
+    {
+      "id": "3acab690-75ed-4afa-ad43-935f98c3cd82",
+      "name": "Dr. Test Doctor",
+      "email": "doctor@test.com",
+      "password": "$2a$12$CGIbYyaYUxdkOkM97tvLZOInblycH1Qwy9pPTNWxXzYuNGGKSxZa6",
+      "role": "doctor",
+      "createdAt": "2025-09-07T15:53:53.725Z",
+      "lastLogin": null,
+      "isActive": true,
+      "isVerified": false,
+      "specialization": "Cardiology",
+      "licenseNumber": "DOC123456",
+      "experience": 5
+    },
+    {
+      "id": "0fc43b98-d799-4761-957f-db2086855cf3",
+      "name": "Dr. Sample",
+      "email": "sample@doctor.com",
+      "password": "$2a$12$.gIGsRknRP4sL9Cjyg81/u/DDjXOcZW60GLXOB3wEZQynpnCq3MK2",
+      "role": "doctor",
+      "createdAt": "2025-09-07T15:58:14.439Z",
+      "lastLogin": null,
+      "isActive": true,
+      "isVerified": false,
+      "specialization": "Neurology",
+      "licenseNumber": "MED789",
+      "experience": 8
+    },
+    {
+      "id": "a6d1fc56-40ca-4b54-8e90-32093ceadd99",
+      "name": "vishal sahu",
+      "email": "vishal@gmail.com",
+      "password": "$2a$12$DD7OZWD3l2AAlv8Mnb5H3Ow.ZaJddbvFVXRS9pnrPCC99eHwUMBYi",
+      "role": "doctor",
+      "createdAt": "2025-09-07T16:02:40.326Z",
+      "lastLogin": "2025-09-07T16:03:24.998Z",
+      "isActive": true,
+      "isVerified": false,
+      "gender": "male",
+      "address": "alipur delhi-110036",
+      "specialization": "MBBS",
+      "licenseNumber": "C52DTYSA",
+      "experience": 5
+    }
+  ],
+  "lastUpdated": "2025-09-07T16:03:24.998Z",
+  "metadata": {
+    "version": "1.0",
+    "description": "Temporary user storage for SwasthyaSetu healthcare system",
+    "totalUsers": 5
+  }
+}

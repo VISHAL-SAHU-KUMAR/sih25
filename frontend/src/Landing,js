@@ -1,0 +1,24 @@
+import { Link } from "react-router-dom";
+import "./Landing.css"; // 👈 Import CSS
+
+function Landing() {
+  return (
+    <div className="landing-container">
+      <h1 className="landing-title">Welcome to TeleHealth Rural</h1>
+      <p className="landing-text">
+        AI-driven teleconsultation and medicine tracking platform for rural areas. 
+        Access healthcare from anywhere, anytime.
+      </p>
+      <div className="landing-buttons">
+        <Link to="/home">
+          <button className="btn-primary">Go to Home</button>
+        </Link>
+        <Link to="/login">
+          <button className="btn-outline">Login</button>
+        </Link>
+      </div>
+    </div>
+  );
+}
+
+export default Landing;

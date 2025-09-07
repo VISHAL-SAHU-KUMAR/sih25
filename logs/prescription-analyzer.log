@@ -1,0 +1,30 @@
+Traceback (most recent call last):
+  File "C:\Users\visha\Documents\SwasthyaSetu-main\ai\prescription-analyzer\backend\main.py", line 1, in <module>
+    from fastapi import FastAPI, File, UploadFile, HTTPException
+  File "C:\Users\visha\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\__init__.py", line 7, in <module>
+    from .applications import FastAPI as FastAPI
+  File "C:\Users\visha\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\applications.py", line 16, in <module>
+    from fastapi import routing
+  File "C:\Users\visha\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 25, in <module>
+    from fastapi import params
+  File "C:\Users\visha\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\params.py", line 5, in <module>
+    from fastapi.openapi.models import Example
+  File "C:\Users\visha\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\openapi\models.py", line 4, in <module>
+    from fastapi._compat import (
+    ...<6 lines>...
+    )
+  File "C:\Users\visha\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\_compat.py", line 22, in <module>
+    from fastapi.exceptions import RequestErrorModel
+  File "C:\Users\visha\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\exceptions.py", line 3, in <module>
+    from pydantic import BaseModel, create_model
+  File "C:\Users\visha\AppData\Local\Programs\Python\Python313\Lib\site-packages\pydantic\__init__.py", line 413, in <module>
+    _getattr_migration = getattr_migration(__name__)
+  File "C:\Users\visha\AppData\Local\Programs\Python\Python313\Lib\site-packages\pydantic\_migration.py", line 260, in getattr_migration
+    from .errors import PydanticImportError
+  File "C:\Users\visha\AppData\Local\Programs\Python\Python313\Lib\site-packages\pydantic\errors.py", line 9, in <module>
+    from typing_inspection.introspection import Qualifier
+  File "C:\Users\visha\AppData\Local\Programs\Python\Python313\Lib\site-packages\typing_inspection\introspection.py", line 14, in <module>
+    from . import typing_objects
+  File "C:\Users\visha\AppData\Local\Programs\Python\Python313\Lib\site-packages\typing_inspection\typing_objects.py", line 19, in <module>
+    from typing_extensions import LiteralString, TypeAliasType, TypeIs, deprecated
+ImportError: cannot import name 'TypeIs' from 'typing_extensions' (C:\Users\visha\AppData\Local\Programs\Python\Python313\Lib\site-packages\typing_extensions.py). Did you mean: 'Type'?

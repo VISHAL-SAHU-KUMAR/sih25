@@ -1,0 +1,107 @@
+/* Full page background */
+.doctor-register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  background: url("https://images.unsplash.com/photo-1588776814546-ec2b3c37a523?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80")
+    no-repeat center center/cover;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 30px;
+}
+
+/* Card styling */
+.register-card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 600px;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+/* Section titles */
+.register-card h2 {
+  font-size: 28px;
+  color: #003366;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.register-card h3 {
+  font-size: 20px;
+  color: #007bff;
+  margin: 20px 0 10px;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 5px;
+}
+
+/* Input fields */
+.register-card input,
+.register-card select,
+.register-card textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.register-card input:focus,
+.register-card select:focus,
+.register-card textarea:focus {
+  border: 1px solid #007bff;
+  box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Days checkboxes */
+.days-checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.days-checkbox label {
+  background: #f4f4f4;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  transition: background 0.2s ease;
+}
+
+.days-checkbox input {
+  margin-right: 5px;
+}
+
+.days-checkbox label:hover {
+  background: #e0e0e0;
+}
+
+/* Register button */
+.btn-primary {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}

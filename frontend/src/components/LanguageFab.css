@@ -1,0 +1,145 @@
+.language-fab-container {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.language-fab {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0c7a43, #10a55a);
+  border: none;
+  box-shadow: 0 4px 16px rgba(12, 122, 67, 0.4);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.language-fab:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(12, 122, 67, 0.5);
+  background: linear-gradient(135deg, #0a6938, #0e944f);
+}
+
+.language-fab:active {
+  transform: scale(0.95);
+}
+
+.current-language-flag {
+  position: absolute;
+  font-size: 18px;
+  top: 8px;
+  left: 8px;
+}
+
+.fab-icon {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  font-size: 14px;
+  color: white;
+}
+
+.language-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 8px;
+  animation: slideUp 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.language-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 28px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 14px;
+  font-weight: 500;
+  min-width: 140px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.language-option:hover {
+  background: #f8fafc;
+  border-color: #0c7a43;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.language-option.active {
+  background: #0c7a43;
+  color: white;
+  border-color: #0c7a43;
+}
+
+.language-option.active:hover {
+  background: #0a6938;
+}
+
+.language-flag {
+  font-size: 18px;
+}
+
+.language-name {
+  flex: 1;
+  text-align: left;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .language-fab-container {
+    bottom: 16px;
+    right: 16px;
+  }
+  
+  .language-fab {
+    width: 48px;
+    height: 48px;
+    font-size: 18px;
+  }
+  
+  .current-language-flag {
+    font-size: 16px;
+    top: 6px;
+    left: 6px;
+  }
+  
+  .fab-icon {
+    font-size: 12px;
+    bottom: 6px;
+    right: 6px;
+  }
+  
+  .language-option {
+    padding: 10px 14px;
+    font-size: 13px;
+    min-width: 120px;
+  }
+}

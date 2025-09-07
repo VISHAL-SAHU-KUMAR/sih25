@@ -1,0 +1,7 @@
+
+> swasthyasetu-auth@1.0.0 start
+> node src/index.js
+
+SwasthyaSetu Auth Server running on http://localhost:3000
+Environment: development
+MongoDB Connected Successfully!

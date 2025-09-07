@@ -1,0 +1,29 @@
+# Flask Backend Dependencies
+Flask==2.3.3
+Flask-CORS==4.0.0
+Werkzeug==2.3.7
+
+# Note: sqlite3 is included with Python standard library
+
+# Data Processing
+typing-extensions==4.8.0
+
+# Development Dependencies (Optional)
+python-dotenv==1.0.0
+
+# Testing (Optional)
+pytest==7.4.3
+pytest-flask==1.3.0
+
+# Production Server (Optional)
+gunicorn==21.2.0
+
+# Additional utilities
+requests==2.31.0
+json5==0.9.14
+
+pandas
+scikit-learn
+joblib
+numpy
+
