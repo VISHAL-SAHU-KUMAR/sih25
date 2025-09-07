@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🏥 SwasthyaSetu - Healthcare Platform
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -149,3 +150,6 @@ PORT=3001 npm start
 ---
 
 **SwasthyaSetu** - *Bridging Healthcare with Technology* 🏥✨
+=======
+# SIH2
+>>>>>>> 6882a88856df647b8c1eb00773dc40533854ee5f
