@@ -1,4 +1,15 @@
+# Netlify build settings for SIH2 React project
+
 [build]
+  # Folder jahan se build command run hogi
   base = "frontend"
+  
+  # React ka build output folder
   publish = "build"
+  
+  # Build command
   command = "npm run build"
+
+# Node version match karne ke liye (Netlify environment)
+[build.environment]
+  NODE_VERSION = "22"
