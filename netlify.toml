@@ -1,15 +1,130 @@
-# Netlify build settings for SIH2 React project
-
-[build]
-  # Folder jahan se build command run hogi
-  base = "frontend"
-  
-  # React ka build output folder
-  publish = "build"
-  
-  # Build command
+  # Build command for the frontend
+  base = "frontend/"
+  publish = "frontend/build/"
   command = "npm run build"
 
-# Node version match karne ke liye (Netlify environment)
 [build.environment]
-  NODE_VERSION = "22"
+  # Treat warnings as non-fatal during build
+  CI = "false"
+  # Node.js version
+  NODE_VERSION = "18.17.0"
+
+[[redirects]]
+  # Handle client-side routing for React Router
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[build.processing]
+  skip_processing = false
+
+[build.processing.css]
+  bundle = true
+  minify = true
+
+[build.processing.js]
+  bundle = true
+  minify = true
+
+[build.processing.html]
+  pretty_urls = true
+
+# Environment-specific settings
+[context.production]
+  command = "npm run build"
+
+[context.deploy-preview]
+  command = "npm run build"
+
+[context.branch-deploy]
+  command = "npm run build"
+>>>>>>> 1b8d97a (Updated netlify.toml and frontend build settings)
+# Netlify build settings for SwasthyaSetu React project
+
+[build]
+  # Build command for the frontend
+  base = "frontend/"
+  publish = "build/"
+  command = "npm run build"
+
+[build.environment]
+  # Treat warnings as non-fatal during build
+  CI = "false"
+  # Node.js version
+  NODE_VERSION = "18.17.0"
+  # Additional build optimizations
+  GENERATE_SOURCEMAP = "false"
+  SKIP_PREFLIGHT_CHECK = "true"
+  ESLINT_NO_DEV_ERRORS = "true"
+
+[[redirects]]
+  # Handle client-side routing for React Router
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[build.processing]
+  skip_processing = false
+
+[build.processing.css]
+  bundle = true
+  minify = true
+
+[build.processing.js]
+  bundle = true
+  minify = true
+
+[build.processing.html]
+  pretty_urls = true
+
+# Environment-specific settings
+[context.production]
+  command = "npm run build"
+
+[context.deploy-preview]
+  command = "npm run build"
+
+[context.branch-deploy]
+  command = "npm run build"
+=======
+  # Build command for the frontend
+  base = "frontend/"
+  publish = "frontend/build/"
+  command = "npm run build"
+
+[build.environment]
+  # Treat warnings as non-fatal during build
+  CI = "false"
+  # Node.js version
+  NODE_VERSION = "18.17.0"
+
+[[redirects]]
+  # Handle client-side routing for React Router
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[build.processing]
+  skip_processing = false
+
+[build.processing.css]
+  bundle = true
+  minify = true
+
+[build.processing.js]
+  bundle = true
+  minify = true
+
+[build.processing.html]
+  pretty_urls = true
+
+# Environment-specific settings
+[context.production]
+  command = "npm run build"
+
+[context.deploy-preview]
+  command = "npm run build"
+
+[context.branch-deploy]
+  command = "npm run build"
+>>>>>>> 1b8d97a (Updated netlify.toml and frontend build settings)

@@ -78,7 +78,11 @@ function RegisterPatient() {
       }, 2000);
 
     } catch (err) {
-      setError("Registration failed. Please try again.");
+      if (err.response && err.response.data && err.response.data.error) {
+        setError(err.response.data.error);
+      } else {
+        setError("Registration failed. Please try again.");
+      }
     }
   };
 

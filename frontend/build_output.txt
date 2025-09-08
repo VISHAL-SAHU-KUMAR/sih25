@@ -1,0 +1,6 @@
+
+> medichealth@0.1.0 build
+> react-scripts build
+
+Creating an optimized production build...
+^Cnpm error A complete log of this run can be found in: C:\Users\visha\AppData\Local\npm-cache\_logs\2025-09-07T17_18_14_564Z-debug-0.log

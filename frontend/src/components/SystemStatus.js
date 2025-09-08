@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { checkSystemHealth, authAPI, symptomAPI, prescriptionAPI } from '../utils/api';
+import { checkSystemHealth } from '../utils/api';
 import './SystemStatus.css';
 
 const SystemStatus = () => {

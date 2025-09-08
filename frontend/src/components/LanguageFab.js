@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import './LanguageFab.css';
 
@@ -12,7 +13,7 @@ const languages = [
 
 export default function LanguageFab() {
   const { i18n } = useTranslation();
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleLanguageMenu = () => {
     setIsOpen(!isOpen);
